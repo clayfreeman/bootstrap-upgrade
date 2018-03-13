@@ -10,11 +10,12 @@
   namespace Bootstrap\Upgrade\Exceptions;
 
   /**
-   * [InvalidRange description]
+   * This exception describes an invalid upgrade range. Valid ranges consist of
+   * a source and target version where the source is less than the target.
    */
   final class InvalidRange extends \Exception {
     /**
-     * [__construct description]
+     * Override the default message of the base class.
      */
     public function __construct() {
       // Force the exception message to a default value
