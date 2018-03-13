@@ -1,0 +1,23 @@
+{
+    "name": "clayfreeman/bootstrap-upgrade",
+    "description": "Performs static analysis of Bootstrap 1.x-3.x markup for forward-only upgrades to Bootstrap 2.x-4.x.",
+    "type": "library",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Clay Freeman",
+            "email": "git@clayfreeman.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/dom-crawler": "^4.0",
+        "symfony/css-selector": "^4.0",
+        "marc-mabe/php-enum": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bootstrap\\Upgrade\\": "lib/"
+        }
+    }
+}
